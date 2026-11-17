@@ -145,7 +145,7 @@ h1, h2, h3, .logo, .sapaan, .quote, .tahun {
 }
 
 .sapaan {
-  color: var(--sky);
+  color: var(--teks);
   font-size: 1.2rem;
 }
 
