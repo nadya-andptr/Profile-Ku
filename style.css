@@ -324,8 +324,9 @@ h1, h2, h3, .logo span, .sapaan, .quote {
   display: block;
   width: 24px;
   height: 24px;
-  color: var(--golden );
+  color: var(--golden);
   flex: none;
+  transform: translateY(-6px);
 }
 
 .glass {
@@ -569,34 +570,3 @@ footer {
   .glass { padding: 24px 20px; }
 
 }
-
-
-/* ==========================================
-   PERBAIKAN POSISI BUNGA KECIL
-   ========================================== */
-
-/* Bunga di samping judul section */
-.h-flower {
-  display: inline-block;
-  vertical-align: middle;
-  flex-shrink: 0;
-  position: relative;
-  top: 2px;
-}
-
-/* Bunga di samping tulisan Nadya's Profile */
-.logo-flower {
-  display: inline-block;
-  vertical-align: middle;
-  flex-shrink: 0;
-  position: relative;
-  top: 2px;
-}
-
-/* Memastikan tulisan dan bunga sejajar */
-.section h2,
-.logo {
-  display: flex;
-  align-items: center;
-}
-
