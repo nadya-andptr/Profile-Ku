@@ -8,7 +8,7 @@ const SITE_NAME = "Nadya's Portfolio";
 const ME = {
   name: "Nadya Ananda Putri",
   title: "Ilustrator & Pecinta Cerita Fantasi",
-  avatar: "img/profile.jpeg",
+  avatar: "profile.jpeg",
 
   // Kutipan singkat yang tampil besar di hero (boleh dikosongkan: "")
 quote: "Star-gazing Aster,\nwould I were the skies,\nTo gaze upon thee with a thousand eyes.",
@@ -24,7 +24,7 @@ quote: "Star-gazing Aster,\nwould I were the skies,\nTo gaze upon thee with a th
   // contoh: logo: "gambar/ibis.png"
   tools: [
     { name: "Ibis Paint",        level: 80, logo: "IbisPaint.jpg" },
-    { name: "MediBang",          level: 40, logo: "MediBang.jpg" },
+    { name: "MediBang",          level: 40, logo: "Medibang.jpg" },
     { name: "Clip Studio Paint", level: 20, logo: "CSP.jpg" }
   ],
 
