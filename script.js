@@ -35,7 +35,7 @@ function flowerSVG() {
 }
 
 
-/* ---------- Isi teks & konten dari data.js ---------- */
+/* Isi teks & konten dari data.js */
 
 function fillContent() {
   document.getElementById("navName").textContent = SITE_NAME;
