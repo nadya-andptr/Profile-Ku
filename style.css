@@ -1,17 +1,16 @@
-/* ==========================================
-   WARNA & DASAR — Forget-me-not x Winter
-   ========================================== */
+
+/* warna dasar */
 :root {
-  --deep:   #2e4b9b;  /* biru tua, aksen kuat / navbar */
+  --deep:   #2e4b9b;  /* biru tua, navbar */
   --mid:    #5876ba;  /* biru sedang */
-  --light:  #a1c2e8;  /* biru muda, aksen lembut */
-  --butter: #f2dd6b;  /* kuning lembut, inti bunga / sorotan */
-  --lilac:  #d7abd0;  /* ungu muda, aksen kedua */
-  --golden: #f2c94c;  /* kuning hangat, aksen ketiga */
-  --ink:    #384556;  /* navy-abu gelap untuk teks */
+  --light:  #a1c2e8;  /* biru muda */
+  --butter: #f2dd6b;  /* kuning muda, inti bunga */
+  --lilac:  #d7abd0;  /* ungu muda*/
+  --golden: #f2c94c;  /* kuning emas */
+  --ink:    #384556;  /* navy-abu gelap */
   --slate:  #7497b6;  /* teks sekunder */
-  --pale:   #dee7ee;  /* panel sangat muda */
-  --grey:   #abb9c4;  /* garis/pembatas netral */
+  --pale:   #dee7ee;  /* warna pucet */
+  --grey:   #abb9c4;  /* garis pembatas */
   --white:  #fefefe;
 
   box-sizing: border-box;
@@ -41,9 +40,7 @@ h1, h2, h3, .logo span, .sapaan, .quote {
   font-family: "Playfair Display", Georgia, serif;
 }
 
-/* ==========================================
-   SALJU & BUNGA DEKORATIF
-   ========================================== */
+/* salju dan bunga */ 
 .snow, .flowers {
   position: fixed;
   inset: 0;
@@ -102,9 +99,7 @@ h1, h2, h3, .logo span, .sapaan, .quote {
   .flake, .deco-flower { animation: none; }
 }
 
-/* ==========================================
-   FLOWER CURSOR TRAIL
-   ========================================== */
+/* cursor bunga */
 
 .cursor-trail {
   position: fixed;
@@ -141,9 +136,7 @@ h1, h2, h3, .logo span, .sapaan, .quote {
   }
 }
 
-/* ==========================================
-   NAVBAR
-   ========================================== */
+/* navbar */
 .navbar {
   position: sticky;
   top: 0;
@@ -198,9 +191,7 @@ h1, h2, h3, .logo span, .sapaan, .quote {
 
 .navbar nav a:hover { color: var(--butter); }
 
-/* ==========================================
-   HERO
-   ========================================== */
+/* hero */
 .hero {
   position: relative;
   z-index: 2;
@@ -263,7 +254,7 @@ h1, h2, h3, .logo span, .sapaan, .quote {
   font-style: italic;
 }
 
-/* Tombol "Lihat Karya": .btn Bootstrap, warnanya diganti lewat variabel */
+/* Tombol "Lihat Karya": */
 .btn-lihat {
   --bs-btn-padding-x: 2rem;
   --bs-btn-padding-y: .8rem;
@@ -291,9 +282,7 @@ h1, h2, h3, .logo span, .sapaan, .quote {
   box-shadow: 0 14px 32px #2e4b9b4d;
 }
 
-/* ==========================================
-   SECTION & PANEL KACA
-   ========================================== */
+/* section */
 .section {
   position: relative;
   z-index: 2;
@@ -316,7 +305,7 @@ h1, h2, h3, .logo span, .sapaan, .quote {
   line-height: 1;
 }
 
-/* Judul "Galeri" tampil langsung di atas gradasi (bukan di dalam panel kaca), jadi tetap putih */
+/* Judul "Galeri" */
 #gallery h2 {
   justify-content: center;
   color: var(--white);
@@ -392,7 +381,7 @@ h1, h2, h3, .logo span, .sapaan, .quote {
 
 .tool-logo img { width: 100%; height: 100%; object-fit: cover; }
 
-/* Bar level: .progress Bootstrap, warnanya diganti */
+/* Bar level: */
 .progress {
   --bs-progress-height: 9px;
   --bs-progress-bg: #38455622;
@@ -404,9 +393,7 @@ h1, h2, h3, .logo span, .sapaan, .quote {
   border-radius: 999px;
 }
 
-/* ==========================================
-   GALERI
-   ========================================== */
+/* galeri */
 /* susunan kolom galeri diatur Bootstrap: .row + .col-6 .col-md-4 */
 
 .card {
@@ -455,9 +442,7 @@ h1, h2, h3, .logo span, .sapaan, .quote {
   outline-offset: 2px;
 }
 
-/* ==========================================
-   KONTAK
-   ========================================== */
+/* info kontak */
 .contact {
   display: flex;
   flex-wrap: wrap;
@@ -481,9 +466,7 @@ h1, h2, h3, .logo span, .sapaan, .quote {
   transform: translateY(-3px);
 }
 
-/* ==========================================
-   FOOTER
-   ========================================== */
+/* footer */
 footer {
   position: relative;
   z-index: 2;
@@ -498,9 +481,7 @@ footer {
   background: #2e4b9b80;
 }
 
-/* ==========================================
-   LIGHTBOX
-   ========================================== */
+/* lightbox */
 .lb {
   position: fixed;
   inset: 0;
@@ -566,9 +547,7 @@ footer {
 .lb-bar button:hover, .lb-close:hover { background: #ffffff38; }
 
 
-/* ==========================================
-   RESPONSIF (HP)
-   ========================================== */
+/* buat di hp */
 @media (max-width: 700px) {
   .navbar { flex-direction: column; gap: 8px; padding: 12px 6%; }
   .navbar nav { justify-content: center; gap: 12px 16px; }
