@@ -1,8 +1,4 @@
-/* ==========================================
-   Mengisi halaman dari data di data.js,
-   plus membuat salju & bunga dekoratif
-   (biasanya tidak perlu diubah)
-   ========================================== */
+/* halaman dari data di data.js, salju dan bunga */
 
 // Cegah karakter khusus merusak HTML
 function esc(text) {
@@ -10,7 +6,7 @@ function esc(text) {
   return String(text).replace(/[&<>"]/g, c => map[c]);
 }
 
-// Warna placeholder kalau karya belum punya gambar
+// Warna placeholder kalau ga ada gambar
 function gradientOf(art) {
   return `linear-gradient(140deg, hsl(${art.hue} 70% 82%), hsl(${(art.hue + 40) % 360} 55% 55%))`;
 }
@@ -23,7 +19,7 @@ function fullBg(art){
   return art.src ? `url("${art.src}")` : gradientOf(art);
 }
 
-// Bunga forget-me-not kecil, dipakai di logo, judul bagian, dan dekorasi melayang
+// Bunga 
 function flowerSVG() {
   return `
     <svg viewBox="0 0 40 40" width="100%" height="100%" fill="none">
@@ -94,13 +90,13 @@ function fillContent() {
   document.getElementById("contactList").innerHTML = ME.contact.map(([label, url]) =>
     `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(label)}</a>`).join("");
 
-  // Bunga kecil di logo & tiap judul bagian
+  // Bunga kecil di logo dan tiap judul
   document.querySelectorAll(".logo-flower, .h-flower").forEach(el => el.innerHTML = flowerSVG());
 }
 
 
 
-/* ---------- Salju yang jatuh pelan ---------- */
+/* Salju yang jatuh pelan */
 
 function makeSnow() {
   const layer = document.getElementById("snow");
@@ -115,7 +111,7 @@ function makeSnow() {
     return left.toFixed(1);
   }
 
-  // Bintik salju halus
+  // Bintik salju putih
   for (let i = 0; i < 36; i++) {
     const left = balancedPosition(i, 36);
     const size = (Math.random() * 3 + 2).toFixed(1);
@@ -130,7 +126,7 @@ function makeSnow() {
       opacity:${opacity}; --drift:${drift}px;"></span>`);
   }
 
-  // Kepingan salju besar (bunga salju)
+  // Kepingan bunga salju
   for (let i = 0; i < 14; i++) {
     const left = balancedPosition(i, 14);
     const size = (Math.random() * 14 + 18).toFixed(0);
